@@ -1,0 +1,17 @@
+class Base {
+	public void display(){
+		System.out.println("Hii i am a base class method");
+	}
+}
+class Derived extends Base {
+	public void display(){
+		super.display();
+		System.out.println("Hii i am a Derived class method");
+	}
+}
+class Temp{
+	public static void main(String args[]){
+		Derived dobj = new Derived();
+		dobj.display();
+	}
+}

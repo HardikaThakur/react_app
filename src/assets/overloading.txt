@@ -1,0 +1,19 @@
+class Base {
+	public void display(){
+		System.out.println("Inside display");
+	}
+	public void display(int a){
+		System.out.println("with a parameter "+a);
+	}
+	public void display(double b){
+		System.out.println("with a parameter "+b);
+	}
+}
+class Temp {
+	public static void main(String args[]){
+		Base b  new Base();
+		b.display();
+		b.display(10);		
+		b.display(10.02);		
+	}
+}
